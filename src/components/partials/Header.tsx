@@ -25,7 +25,8 @@ const Header= () => {
   return (
     <>
       <header
-        className="
+              className="
+        z-50
  px-6 py-3 m-4 rounded-4xl fixed top-0 left-0 right-0 
   bg-white/2 backdrop-blur-xl border border-white/25 text-gray-400
 ">
