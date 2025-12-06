@@ -29,6 +29,7 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
   const isMobile = useMemo(() => {
     const hasTouchScreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     const isSmallScreen = window.innerWidth <= 768;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
     const mobileRegex = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i;
     const isMobileUserAgent = mobileRegex.test(userAgent.toLowerCase());
@@ -282,7 +283,7 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
   return (
     <div
       ref={cursorRef}
-      className="fixed top-0 left-0 w-0 h-0 pointer-events-none z-[9999]"
+      className="fixed top-0 left-0 w-0 h-0 pointer-events-none z-9999"
       style={{ willChange: 'transform' }}
     >
       <div

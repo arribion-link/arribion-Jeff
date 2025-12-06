@@ -13,11 +13,7 @@ module.exports = {
     extend: {
       // Optional: expose your CSS variables as Tailwind tokens
       colors: {
-        primary: "var(--primary-color)",
-        secondary: "var(--secondary-color)",
-        background: "var(--bg-color)",
-        foreground: "var(--text-color)",
-        surface: "var(--surface)",
+       
       },
     },
   },

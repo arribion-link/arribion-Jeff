@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 
 import Header from "./components/partials/Header"
 import Home from "./pages/Home"
+import Footer from "./components/partials/Footer"
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route  path="/"  element={<Home/>}   />
       </Routes>
+      <Footer/>
     </>
   )
 }
