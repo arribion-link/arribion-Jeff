@@ -1,9 +1,10 @@
 
 const Footer = () => {
   return (
-    <div className='bg-[url(../assets/footer.jpg)] bg-center bg-no-repeat bg-cover min-h-[60vh]'>
-      
-    </div>
+    <footer className='m-4 py-5'>
+      <hr className="text-slate-700/45" />
+      <h1 className="text-center text-slate-700">&copy; { new Date().getFullYear() } Jeff Arribion. Codnify.dev . All Rights Reserved.</h1>
+    </footer>
   )
 }
 
