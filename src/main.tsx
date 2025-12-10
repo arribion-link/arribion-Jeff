@@ -20,7 +20,7 @@ createRoot(document.getElementById("root")!).render(
           moveParticlesOnHover={true}
           alphaParticles={false}
           disableRotation={false}
-        />
+        ></Particles>
       </div>
       <TargetCursor
         spinDuration={2}

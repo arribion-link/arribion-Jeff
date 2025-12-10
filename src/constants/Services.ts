@@ -19,15 +19,9 @@ const services: serviceProp[] = [
   },
   {
     id: 3,
-    title: "Secure Systems & Privacy by Design",
-    description:
-      "Implementing secure coding practices, zero-trust architectures, and compliance-ready workflows to protect users and data.",
-  },
-  {
-    id: 4,
     title: "Data-Driven Architecture & Edge Solutions",
     description:
-      "Engineering scalable data pipelines and real-time systems for IoT, smart platforms, and decentralized applications.",
+      "Implementing secure coding practices, zero-trust architectures, and compliance-ready workflows to protect users and data.",
   },
 ];
 

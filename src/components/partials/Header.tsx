@@ -7,13 +7,10 @@ import {
 import { Link } from "react-router-dom";
 import { FiSidebar } from "react-icons/fi";
 import {
-  // FaCode,
-  FaYoutube,
   FaNetworkWired,
   FaRegFileArchive,
   FaBlog,
 } from "react-icons/fa";
-import { FaLinkedin, FaGithub } from "react-icons/fa6";
 // couses icon
 // import {
 //     GiBookshelf
@@ -31,7 +28,7 @@ const Header= () => {
         {" "}
         <div className=" flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <div className=" gap-4 items-center hidden">
+            <div className=" flex gap-4 items-center">
               <Link to="">
                 <div
                   className="TargetCursor flex gap-2 bg-gray-50/5 px-3 py-1 rounded-4xl hover:bg-gray-100/10 ease items-center"
@@ -76,22 +73,6 @@ const Header= () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <div
-              className="flex gap-2 bg-gray-50/5 px-3 py-1 rounded-4xl hover:bg-gray-100/10 ease items-center"
-              title="LinkedIn">
-              <FaLinkedin size={20} />
-            </div>
-
-            <div
-              className="flex gap-2 bg-gray-50/5 px-3 py-1 rounded-4xl hover:bg-gray-100/10 ease items-center"
-              title="More">
-              <FaYoutube size={20} />
-            </div>
-            <div
-              className="flex gap-2 bg-gray-50/5 px-3 py-1 rounded-4xl hover:bg-gray-100/10 ease items-center"
-              title="More">
-              <FaGithub size={20} />
-            </div>
             <div className="text-gray-50/20">|</div>
             <div
               className="TargetCursor flex gap-2 bg-gray-50/5 px-3 py-1 rounded-4xl hover:bg-gray-100/10 ease items-center"
