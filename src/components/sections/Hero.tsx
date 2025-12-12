@@ -64,10 +64,10 @@ const Hero = () => {
           ref={scrollRef}
           src={hero_image}
           alt="Stoic head illustration"
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[20em]"
+          className="top-[5em] right-0 max-w-[12em] absolute md:top-1/2 md:left-1/2 md:transform-translate-x-1/2 md:-translate-y-1/2 md:max-w-[20em]"
         />
 
-        <div className="md:flex md:justify-between">
+        <div className="mt-[5em] md:flex md:justify-between">
           <div className="hero-LHS">
             <div className="her0-subheading">
               <h1 className=" flex font-bold text-slate-400/50">
@@ -77,7 +77,7 @@ const Hero = () => {
                 real-world in emerging markets.
               </h1>
             </div>
-            <div className="resume-download-button">
+            <div className="resume-download-button flex justify-center">
                 <button className="cursor-target flex my-4 md:mt-4 rounded gap-3   items-center bg-gray-900 p-2 hover:text-slate-500 max-w-[20em]">
                   <FaDownload className="animate-bounce" size={20} /> Download
                   my resume
@@ -103,7 +103,7 @@ const Hero = () => {
                 </GradientText>
               </button>
             </div>
-            <div className="follow-on-social-media">
+            <div className="follow-on-social-media hidden md:block ">
               <div className="my-3">
                 <h2 className="text-center text-slate-300 font-bold">
                   {" "}
