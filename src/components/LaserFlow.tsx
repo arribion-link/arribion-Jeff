@@ -1,5 +1,31 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+
+type LaserUniforms = {
+  iTime: { value: number };
+  iResolution: { value: THREE.Vector3 };
+  iMouse: { value: THREE.Vector4 };
+  uWispDensity: { value: number };
+  uTiltScale: { value: number };
+  uFlowTime: { value: number };
+  uFogTime: { value: number };
+  uBeamXFrac: { value: number };
+  uBeamYFrac: { value: number };
+  uFlowSpeed: { value: number };
+  uVLenFactor: { value: number };
+  uHLenFactor: { value: number };
+  uFogIntensity: { value: number };
+  uFogScale: { value: number };
+  uWSpeed: { value: number };
+  uWIntensity: { value: number };
+  uFlowStrength: { value: number };
+  uDecay: { value: number };
+  uFalloffStart: { value: number };
+  uFogFallSpeed: { value: number };
+  uColor: { value: THREE.Vector3 };
+  uFade: { value: number };
+};
 
 type Props = {
   className?: string;
@@ -284,7 +310,7 @@ export const LaserFlow: React.FC<Props> = ({
 }) => {
   const mountRef = useRef<HTMLDivElement | null>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
-  const uniformsRef = useRef<unknown>(null);
+  const uniformsRef = useRef<LaserUniforms | null>(null);
   const hasFadedRef = useRef(false);
   const rectRef = useRef<DOMRect | null>(null);
   const baseDprRef = useRef<number>(1);
@@ -554,7 +580,6 @@ export const LaserFlow: React.FC<Props> = ({
       canvas.removeEventListener('pointerdown', onMove as any);
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       canvas.removeEventListener('pointerenter', onMove as any);
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       canvas.removeEventListener('pointerleave', onLeave as any);
       canvas.removeEventListener('webglcontextlost', onCtxLost);
       canvas.removeEventListener('webglcontextrestored', onCtxRestored);
