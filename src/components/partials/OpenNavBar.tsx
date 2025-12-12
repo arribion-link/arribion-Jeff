@@ -1,7 +1,7 @@
 import { CirclesWithBar } from "react-loader-spinner";
 const OpenNavBar = () => {
   return (
-    <div className="fixed bottom-2 right-2">
+    <div className="z-50 fixed top-2 md:top-[84vh] md:bottom-6 right-2">
       <CirclesWithBar
         height="50"
         width="50"

@@ -2,7 +2,7 @@ import Stacks from "../../constants/Stack"
 const Stack = () => {
   return (
     <>
-      <section className="flex justify-center my-[7em]">
+      <section className="flex justify-center  my-4 md:my-[7em]">
           <div className="flex flex-wrap gap-2 items-stretch animate-pulse">
           {
             Stacks.map((stack) => (    

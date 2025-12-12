@@ -2,12 +2,12 @@
 const About = () => {
   return (
     <>
-      <section className="mt-[8em] mx-4 min-h-[90vh]">
-        <h1 className="text-3xl text-slate-600 mb-8 hover:to-blue-500">ABOUT ME</h1>
+      <section className=" mt-[1em] md:mt-[8em] mx-4 md:min-h-[90vh]">
+        <h1 className="mb-8 text-slate-800 text-3xl ml-[3em]">ABOUT ME</h1>
         <div className="grid md:grid-cols-2 items-center">
           <div></div>
           <div className="md:mt-15 text-gray-400">
-            <p>
+            <p className="text-2xl text-center text-slate-300 md:text-end">
               {" "}
               I build fast, beautiful, production-ready apps that users love —
               from idea to deployment. Full-Stack Engineer | Clean Architecture &

@@ -2,7 +2,7 @@ import MagicBento from "../MagicBento"
 const Services = () => {
   return (
     <section>
-      <h1 className="text-3xl m-4 text-slate-800 text-center">SERVICES</h1>
+      <h1 className="text-3xl m-1 mt-8 text-slate-800 text-center">SERVICES</h1>
       <div className="flex justify-center">
         <div className="">
           <MagicBento

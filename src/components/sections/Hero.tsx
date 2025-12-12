@@ -1,13 +1,13 @@
 import {
   FaDownload,
-  FaGithubSquare,
-  FaTwitter,
-  FaYoutube,
+//   FaGithubSquare,
+//   FaTwitter,
+//   FaYoutube,
 } from "react-icons/fa";
 import hero_image from "../../assets/hero-stoic-head.webp";
 import TextPressure from "../TextPressure";
-import GradientText from "../GradientText";
-import { FaLinkedin } from "react-icons/fa";
+// import GradientText from "../GradientText";
+// import { FaLinkedin } from "react-icons/fa";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useRef } from "react";
@@ -23,11 +23,11 @@ const Hero = () => {
       ScrollTrigger.matchMedia({"(min-width: 768px)": () => {
           if (scrollRef.current) {
             gsap.to(scrollRef.current, {
-              x: "-20vw", // move left
+              x: "-25vw", // move left
               scrollTrigger: {
                 trigger: ".hero-section",
                 start: "top top",
-                end: "+=900", // only 300px of scroll
+                end: "+=700", // only 300px of scroll
                 pin: scrollRef.current,
                 scrub: true,
               },
@@ -45,7 +45,7 @@ const Hero = () => {
         parallaxOn={true}
       />
       <section className="pt-[3em] min-h-screen md:pt-[8em] m-8">
-        <div style={{ position: "relative", height: "200px" }}>
+        <div className="bg-red-500/80 hover:shadow p-1" style={{ position: "relative", height: "200px" }}>
           <TextPressure
             text="HI, I'M JEFF"
             flex={true}
@@ -59,15 +59,15 @@ const Hero = () => {
             minFontSize={36}
           />
         </div>
-
+        <h1 className="text-3xl py-4">From Lines of Code to Pixels.</h1>
         <img
           ref={scrollRef}
           src={hero_image}
           alt="Stoic head illustration"
-          className="top-[5em] right-0 max-w-[12em] absolute md:top-1/2 md:left-1/2 md:transform-translate-x-1/2 md:-translate-y-1/2 md:max-w-[20em]"
+          className="top-[47em] md:mt-[3em] right-0 max-w-[18em] absolute md:top-1/2 md:left-1/2 md:transform-translate-x-1/2 md:-translate-y-1/2 md:max-w-[20em]"
         />
 
-        <div className="mt-[5em] md:flex md:justify-between">
+       {/* <div className="mt-[5em] md:flex md:justify-between"> */}
           <div className="hero-LHS">
             <div className="her0-subheading">
               <h1 className=" flex font-bold text-slate-400/50">
@@ -77,14 +77,14 @@ const Hero = () => {
                 real-world in emerging markets.
               </h1>
             </div>
-            <div className="resume-download-button flex justify-center">
-                <button className="cursor-target flex my-4 md:mt-4 rounded gap-3   items-center bg-gray-900 p-2 hover:text-slate-500 max-w-[20em]">
+            <div className="resume-download-button flex justify-center md:block text-end">
+                <button className="cursor-target flex my-4 md:mt-4 rounded gap-3  items-center bg-gray-900 p-2 hover:text-slate-500 ">
                   <FaDownload className="animate-bounce" size={20} /> Download
                   my resume
                 </button>
             </div>
           </div>
-
+  {/*
           <div className="hero-RHS">
             <div className="contact-button">
               <button className="cursor-target w-full text-bold text-3xl border rounded-2xl border-slate-600 py-3 px-8">
@@ -120,7 +120,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );
