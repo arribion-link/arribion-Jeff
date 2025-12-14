@@ -64,7 +64,7 @@ const Hero = () => {
           ref={scrollRef}
           src={hero_image}
           alt="Stoic head illustration"
-          className="top-[33em] md:mt-[3em] right-0 max-w-[18em] absolute md:top-[1.6em] md:left-1/2 md:transform-translate-x-1/2 md:-translate-y-1/2 md:max-w-[20em]"
+          className="top-[33em] md:mt-[3em] right-0 max-w-[18em] absolute md:top-[0.9em] md:left-1/2 md:transform-translate-x-1/2 md:-translate-y-1/2 md:max-w-[20em]"
         />
 
        {/* <div className="mt-[5em] md:flex md:justify-between"> */}
