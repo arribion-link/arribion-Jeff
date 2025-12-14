@@ -31,24 +31,24 @@ const DEFAULT_GLOW_COLOR = '132, 0, 255';
 const MOBILE_BREAKPOINT = 768;
 
 const cardData: BentoCardProps[] = [
-  {
-    color: '#060010',
-    title: 'Analytics',
-    description: 'Track user behavior',
-    label: 'Insights'
-  },
-  {
-    color: '#060010',
-    title: 'Dashboard',
-    description: 'Centralized data view',
-    label: 'Overview'
-  },
-  {
-    color: '#060010',
-    title: 'Collaboration',
-    description: 'Work together seamlessly',
-    label: 'Teamwork'
-  },
+  // {
+  //   color: '#060010',
+  //   title: 'Analytics',
+  //   description: 'Track user behavior',
+  //   label: 'Insights'
+  // },
+  // {
+  //   color: '#060010',
+  //   title: 'Dashboard',
+  //   description: 'Centralized data view',
+  //   label: 'Overview'
+  // },
+  // {
+  //   color: '#060010',
+  //   title: 'Collaboration',
+  //   description: 'Work together seamlessly',
+  //   label: 'Teamwork'
+  // },
   {
     color: '#060010',
     title: 'Automation',

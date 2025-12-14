@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center text-slate-600 mt-12 md:mt-8">
             © {new Date().getFullYear()}{" "}
-            <span className="text-slate-500 font-medium">Jeff Arribion</span>.
+            <span className="text-slate-500">Jeff Arribion</span>.
             Codnify.dev. All Rights Reserved.
           </div>
         </div>

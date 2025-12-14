@@ -1,41 +1,42 @@
 import {
   FaDownload,
-//   FaGithubSquare,
-//   FaTwitter,
-//   FaYoutube,
+  //   FaGithubSquare,
+  //   FaTwitter,
+  //   FaYoutube,
 } from "react-icons/fa";
 import hero_image from "../../assets/hero-stoic-head.webp";
-import TextPressure from "../TextPressure";
+import TextPressure from "../ui/TextPressure";
 // import GradientText from "../GradientText";
 // import { FaLinkedin } from "react-icons/fa";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useRef } from "react";
-import TargetCursor from "../TargetCursor";
+import TargetCursor from "../ui/TargetCursor";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const scrollRef = useRef<HTMLImageElement | null>(null);
 
-    useEffect(() => {
-      // Only run animation on desktop (min-width: 768px)
-      ScrollTrigger.matchMedia({"(min-width: 768px)": () => {
-          if (scrollRef.current) {
-            gsap.to(scrollRef.current, {
-              x: "-25vw", // move left
-              scrollTrigger: {
-                trigger: ".hero-section",
-                start: "top top",
-                end: "+=700", // only 300px of scroll
-                pin: scrollRef.current,
-                scrub: true,
-              },
-            });
-          }
-        },
-      });
-    }, []);
+  useEffect(() => {
+    // Only run animation on desktop (min-width: 768px)
+    ScrollTrigger.matchMedia({
+      "(min-width: 768px)": () => {
+        if (scrollRef.current) {
+          gsap.to(scrollRef.current, {
+            x: "-25vw", // move left
+            scrollTrigger: {
+              trigger: ".hero-section",
+              start: "top top",
+              end: "+=700", // only 300px of scroll
+              pin: scrollRef.current,
+              scrub: true,
+            },
+          });
+        }
+      },
+    });
+  }, []);
 
   return (
     <>
@@ -45,7 +46,9 @@ const Hero = () => {
         parallaxOn={true}
       />
       <section className="pt-[3em] min-h-screen md:pt-[8em] m-8">
-        <div className="bg-red-500/80 hover:shadow p-1" style={{ position: "relative", height: "200px" }}>
+        <div
+          className="bg-red-500/80 hover:shadow p-1"
+          style={{ position: "relative", height: "200px" }}>
           <TextPressure
             text="HI, I'M JEFF"
             flex={true}
@@ -59,32 +62,34 @@ const Hero = () => {
             minFontSize={36}
           />
         </div>
-        <h1 className="text-3xl py-4">From Lines of Code to Pixels.</h1>
+        <h1 className="text-3xl py-4">
+          Crafting Seamless Digital Experiences: <br /> From Code to Pixel.
+        </h1>
         <img
           ref={scrollRef}
           src={hero_image}
           alt="Stoic head illustration"
-          className="top-[33em] md:mt-[3em] right-0 max-w-[18em] absolute md:top-[0.9em] md:left-1/2 md:transform-translate-x-1/2 md:-translate-y-1/2 md:max-w-[20em]"
+          className="top-[33em] md:mt-[3em] right-0 max-w-[15.5em] absolute md:top-[0.9em] md:left-1/2 md:transform-translate-x-1/2 md:-translate-y-1/2 md:max-w-[20em]"
         />
 
-       {/* <div className="mt-[5em] md:flex md:justify-between"> */}
-          <div className="hero-LHS">
-            <div className="her0-subheading">
-              <h1 className=" flex font-bold text-slate-400/50">
-                {" "}
-                Building sleek <br className="md:hidden" /> scalable data driven
-                applications. that blend <br /> cutting-edge tech with
-                real-world in emerging markets.
-              </h1>
-            </div>
-            <div className="resume-download-button flex justify-center md:block text-end">
-                <button className="cursor-target flex my-4 md:mt-4 rounded gap-3  items-center bg-gray-900 p-2 hover:text-slate-500 ">
-                  <FaDownload className="animate-bounce" size={20} /> Download
-                  my resume
-                </button>
-            </div>
+        {/* <div className="mt-[5em] md:flex md:justify-between"> */}
+        <div className="hero-LHS">
+          <div className="her0-subheading">
+            <h1 className=" flex text-slate-400/50">
+              {" "}
+              Building sleek <br className="md:hidden" /> scalable data driven
+              applications <br /> that are user-centered with robust
+              functionality and elegant design.
+            </h1>
           </div>
-  {/*
+          <div className="resume-download-button flex justify-center md:block text-end">
+            <button className="cursor-target flex my-4 md:mt-4 rounded gap-3  items-center bg-gray-900 p-2 hover:text-slate-500 ">
+              <FaDownload className="animate-bounce" size={20} /> Download my
+              resume
+            </button>
+          </div>
+        </div>
+        {/*
           <div className="hero-RHS">
             <div className="contact-button">
               <button className="cursor-target w-full text-bold text-3xl border rounded-2xl border-slate-600 py-3 px-8">

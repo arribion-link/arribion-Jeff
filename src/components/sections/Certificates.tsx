@@ -1,5 +1,5 @@
 import Certs from "../../constants/Cert"
-import ElectricBorder from "../ElectricBorder";
+import ElectricBorder from "../ui/ElectricBorder";
 // import cert_img from "../../assets/hero.png"
 const Certificates = () => {
   return (

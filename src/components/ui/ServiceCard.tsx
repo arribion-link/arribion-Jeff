@@ -1,5 +1,5 @@
 
-import services from "../constants/Services";
+import services from "../../constants/Services";
 // import ElectricBorder from "./ElectricBorder";
 type ServiceCardProp = {
   image: string;

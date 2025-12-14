@@ -1,11 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './css/index.css'
-import App from './App.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./css/index.css";
+import App from "./App.tsx";
 
-import TargetCursor from "./components/TargetCursor"
-import Particles from './components/Particles.tsx'
-import { BrowserRouter } from 'react-router-dom'
+import TargetCursor from "./components/ui/TargetCursor.tsx";
+import Particles from "./components/ui/Particles.tsx";
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -19,8 +19,7 @@ createRoot(document.getElementById("root")!).render(
           particleBaseSize={100}
           moveParticlesOnHover={true}
           alphaParticles={false}
-          disableRotation={false}
-        ></Particles>
+          disableRotation={false}></Particles>
       </div>
       <TargetCursor
         spinDuration={2}
